@@ -16,7 +16,7 @@ Roomle Configurator Script is used to describe Components and Configurations whi
 ### How to script Roomle Components
 The easiest way to learn scripting for the Roomle Configurator is to see a simple example. The following code snippet is a script representing a table shown on the image.
 
-![The example table component](figures/table.png)
+![The example table component](assets/figures/table.png)
 
 #### The component definition
 We start with one table consisting of a table top and four legs. The simple geometry is one cube representing the table top and four cubes representing the legs. The table has one parameter to modify the width and two parameters for the table top material and the legs material.
@@ -244,7 +244,7 @@ There are a few things to note in this script:
 #### Docking components to components
 A pedestal can be docked to the table. When the pedestal is docked, the legs of the table are hidden on the corresponding side. When the pedestal is docked to the table a connector is shown. There can only be docked one pedestal to a table at a time. The number of drawers can be switched between 2 and 3. This is why we add a parameter for the number of drawers.
 
-![The pedestal component](figures/pedestal.png)
+![The pedestal component](assets/figures/pedestal.png)
 
 ```javascript
 {
@@ -434,7 +434,7 @@ Notice this values to allow docking between components:
 
 As a result the table with docked pedestal looks like this:
 
-![The pedestal docked to the table](figures/docked.png)
+![The pedestal docked to the table](assets/figures/docked.png)
 
 #### Using subComponents
 In some cases multiple instances of one component might be handy (i.e. legs of the table). In this example we want to create a component and reuse it inside the geometry section. Two legs are built as subcomponents to allow reuse for both sides of the table.
